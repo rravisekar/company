@@ -12,6 +12,9 @@ persist_with: company_house_default_datagroup
 
 explore: company_name {}
 
+explore: nuts_code_ref {}
+
+explore: post_code {}
 # explore: bank_loan_default {}
 
 # explore: bank_marketing {}
@@ -181,4 +184,3 @@ explore: company_name {}
 # explore: statewise_pct {}
 
 # explore: statewise_pct_rev {}
-
