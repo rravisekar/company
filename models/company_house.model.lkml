@@ -10,11 +10,21 @@ datagroup: company_house_default_datagroup {
 
 persist_with: company_house_default_datagroup
 
-explore: company_name {}
+explore: company_name {
+  join: post_code {
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${company_name.post_code} = ${post_code.pcd} ;;
+  }
 
-explore: nuts_code_ref {}
+  join: nuts_code_ref {
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${post_code.nuts} = ${nuts_code_ref.lau218_cd} ;;
+  }
+}
 
-explore: post_code {}
+
 # explore: bank_loan_default {}
 
 # explore: bank_marketing {}
