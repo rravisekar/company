@@ -24,6 +24,8 @@ explore: company_name {
   }
 }
 
+explore: company_house_region {}
+
 
 # explore: bank_loan_default {}
 
