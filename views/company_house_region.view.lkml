@@ -29,7 +29,7 @@ view: company_house_region {
 
   dimension: location {
     type: string
-    sql: ${TABLE}."LOCATION" ;;
+    sql: geometrytype(${TABLE}."LOCATION") ;;
   }
 
   dimension: nuts_cde {
