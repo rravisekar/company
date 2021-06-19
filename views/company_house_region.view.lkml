@@ -38,6 +38,7 @@ view: company_house_region {
   }
 
   dimension: post_code {
+    map_layer_name: uk_postcode_areas
     type: string
     sql: ${TABLE}."POST_CODE" ;;
   }
