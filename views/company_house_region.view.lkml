@@ -29,8 +29,8 @@ view: company_house_region {
 
   dimension: location {
     type: location
-    sql_latitude: ST_Y(${TABLE}."LOCATION") ;;
-    sql_longitude: ST_X(${TABLE}."LOCATION")   ;;
+    sql_latitude:  ST_X(${TABLE}."LOCATION") ;;
+    sql_longitude: ST_Y(${TABLE}."LOCATION")   ;;
   }
 
   dimension: nuts_cde {
